@@ -11,17 +11,17 @@ public class Main {
 
         System.out.println("Please enter your name.");
         String name = scanner.nextLine();
-        System.out.println("Hello, "+name);
+        System.out.printf("Hello %s!%n", name);
         System.out.println("Enter your birth year.");
         int birthday = scanner.nextInt();
         int age = date - birthday;
-        System.out.println(name + " is " + age + " years old.");
+        System.out.printf("%s is %d years old%n", name,age);
 
         if(age <= 21 ){
-            System.out.println(name + " you are young.");
+            System.out.printf("%s you are to young!%n", name);
         }
         else if (age >= 22){
-            System.out.println(name + " your getting old.");
+            System.out.printf("%s you are old!%n", name);
         }
 
         scanner.close();
